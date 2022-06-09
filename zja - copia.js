@@ -1,0 +1,4 @@
+(()=>{const c = ()=> parseInt(Math.random()*255), a = ()=> document.querySelector("body").style.setProperty("background",`rgba(${c()}, ${c()}, ${c()}, .1)`);setTimeout(a, 1);setInterval(a, 1000)})();
+
+(()=>{const c = ()=> parseInt(Math.random()*90),no = document.querySelector("#no"), yes = document.querySelector("#si"),cerrar = document.querySelector(".cerrar");no.addEventListener("mouseover", ()=>{no.style.setProperty("top", c()+"%");no.style.setProperty("left", c()+"%");});yes.addEventListener("click", ()=>{document.querySelector(".pre_all").classList.add("activo");document.querySelector(".say_yes").classList.remove("activo");});cerrar.addEventListener("click", ()=>{document.querySelector(".pre_all").classList.remove("activo");document.querySelector(".say_yes").classList.add("activo");});
+})();
